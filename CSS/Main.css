@@ -1,0 +1,220 @@
+    body {
+            font-family: "Roboto Mono", sans-serif;
+            
+       
+        }
+        
+        
+        .myDiv {
+                      
+        }
+        
+        .myDiv:before {
+            background-image: url("body.jpeg");
+            content: "";
+            position: fixed;         
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: .3;
+	
+		  background-size:cover;
+        }
+        
+        .title {
+            text-align: center;
+            font-family: Nosifer, sans-serif;
+              color: rgba(82, 103, 75, 0.46);
+            font-size: 36px;
+            font-weight: 800;
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .sub-title {
+               color: rgb(29 28 28 / 88%);
+            font-size: 18px;
+            font-weight: 600;
+           
+            text-align: center;
+        }
+        
+        .eskms {
+            -webkit-box-align: center;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.125);
+            border: 0px;
+            border-radius: 12px;
+            color: rgb(98, 125, 88);
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 700;
+            height: 36px;
+            -webkit-box-pack: center;
+            justify-content: center;
+            outline: none;
+            padding-left: 16px;
+            padding-right: 16px;
+            width: 100%;
+        }
+        
+        ul {
+            list-style-type: none;
+        }
+        
+      
+        
+        .rot {
+            box-shadow: rgba(0, 0, 0, 0.03) 0px 3px 7px 2px;
+            border-radius: 0px 0px 12px 12px;
+            background: rgba(0, 0, 0, 0.12);
+            font-size: 14px;
+            padding: 0px 20px;
+            color: rgba(255, 255, 255, 0.75);
+        }
+        
+        .low-card {
+            background: rgb(166, 186, 81);
+            text-align: center;
+            border-radius: 12px !important;
+          
+        }
+        
+        .card-row {
+            align-items: center;
+            display: flex;
+        }
+        
+        .card-heading {
+            color: rgba(82, 103, 75, 0.5);
+        }
+        
+        .card-subheading {
+            font-family: "Roboto Mono", monospace;
+            color: rgb(82, 103, 75) !important;
+            font-size: 36px;
+            font-weight: 700;
+        }
+        
+        .menu {
+            -webkit-box-align: center;
+            align-items: center;
+       background-color: rgb(255 255 255 / 49%);
+            border: 0px;
+            border-radius: 12px;          
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 700;
+            height: 56px;
+            -webkit-box-pack: center;
+            justify-content: center;
+            outline: none;
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+        
+        .brand {
+            color: white;
+            font-family: Nosifer, sans-serif;
+            font-size: 20px;
+            font-weight: 800;
+            letter-spacing: 0.03em;
+            white-space: nowrap;
+            margin-left: 8px;
+        }
+        
+        .ee {
+            -webkit-box-align: center;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.125);
+            border: 0px;
+            border-radius: 12px;
+            color: rgb(98, 125, 88);
+            cursor: pointer;
+            display: flex;
+            font-size: 14px;
+            font-weight: 700;
+            height: 36px;
+            -webkit-box-pack: center;
+            justify-content: center;
+            outline: none;
+            padding-left: 16px;
+            padding-right: 16px;
+      
+        }
+        
+        .menu-2 {
+            color: rgba(255, 255, 255, 0.75);
+            font-weight: 700;
+            padding-left: 16px;
+            padding-right: 16px;
+            text-decoration: none;
+        }
+        
+        .menu-1 {
+            color: rgb(98, 125, 88);
+            font-weight: 700;
+           
+            text-decoration: none;
+        }
+        
+        .footer-text {
+            color: rgba(255, 255, 255, 0.816);
+            font-size: 14px;
+            font-weight: 400;
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+        }
+		.modal-backdrop {
+    position: unset !important;
+	}
+	.modal-content {
+
+    border: none !important;
+ 
+}
+
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+   
+
+}
+button:focus {
+  outline: none;
+
+}
+button:active {
+  color: white !important;
+  font-weight:bold !important;
+ 
+}
+a{
+
+    text-decoration: none !important;
+
+}
+
+#footerUI li{
+
+padding:15px;
+
+}
+.modal-footer {
+    border-top:none !important;
+
+}
+
+@media (min-width: 992px)
+.modal-lg, .modal-xl {
+    max-width: 600px !important;
+}
+
+@media screen and (max-width: 880px) {
+  .title{
+	  font-size:22px !important;
+  }
+}
+
+    
