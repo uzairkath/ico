@@ -37,7 +37,7 @@ contract.methods.rate().call()
    e.preventDefault();
     const amount = e.target[0].value;
     const value = amount * rate;
-    const _value = web3.utils.toBN(value * 1e11);
+    const _value = web3.utils.toBN(value * 1e12);
     console.log(_value);
    console.log(accounts);
    contract.methods.buyTokens().send({from: accounts[0], value: _value})
