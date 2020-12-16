@@ -39,8 +39,8 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log(_rate);
     rate = _rate
     console.log((amount / rate) )
-    const value = web3.utils.toBN(amount * 1e18);
-    const _value = web3.utils.toBN(Math.round(value / rate));
+    const value = amount/ rate;
+    const _value = web3.utils.toBN(Math.round(value * 1e18));
     console.log(_value);
    console.log(accounts);
    contract.methods.buyTokens().send({from: accounts[0], value: _value})
