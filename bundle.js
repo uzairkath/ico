@@ -3,6 +3,7 @@ const abi = [{"inputs":[{"internalType":"contract IERC20","name":"token","type":
 var rate;
 const web3 = new Web3(window.ethereum);
 const contract = new web3.eth.Contract(abi, address);
+console.log(contract);
 var accounts = [];
 const ethereumButton = document.querySelector('.enableEthereumButton');
 const buy = document.querySelector('#buy');
@@ -27,23 +28,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
   })
   });
-contract.methods.rate().call()
-.then(_rate => {
-  console.log(_rate);
-  rate = _rate
-})
+
  const form = document.getElementById('form');
  form.addEventListener('submit', e => {
    e.preventDefault();
+   console.log(e.target[0].value)
     const amount = e.target[0].value;
-    const value = amount * rate;
-    const _value = web3.utils.toBN(value * 1e12);
+    contract.methods.rate().call()
+  .then(_rate => {
+    console.log(_rate);
+    rate = _rate
+    console.log((amount / rate) )
+    const value = web3.utils.toBN(amount * 1e18);
+    const _value = web3.utils.toBN(Math.round(value / rate));
     console.log(_value);
    console.log(accounts);
    contract.methods.buyTokens().send({from: accounts[0], value: _value})
    .then(result => {
      console.log(result);
    })
+  });
  })
 })
 
